@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>JS Game</title>
+</head>
+<body>
+
+<!-- <h1> Hello</h1>
+<div id="root">
+
+</div> -->
+  <div class="app hide">
+    <div class="app__header">
+      <h1 id="time-header"> Время игры: <span id="time">5.0</span></h1>
+      <h1 id="rezult-header" class="hide"> Ваш результат: <span id="rezult"></span></h1>
+    </div>
+    <div class="app__content">
+      <button class="btn" id="start">Начать</button>
+
+      <div class="game" id="game"></div>
+    </div>
+    <div class="app__footer">
+      <div class="input">
+        <label for="game-time">Время игры, (сек)</label>
+        <input type="number" id="game-time" min="5" step="1" value="5">
+      </div>
+    </div>
+  
+  <div class="rezultList">
+    <h1>Рейтинг</h1>
+    <div class="listOfUsers">
+
+    </div>
+  </div>
+</div>
+  <div class="loginName">
+    <input type="text" placeholder="yor name" id="userName"><br>
+    <button id="tapped">Войти</button>
+  </div>
+  
+
+  <script src="./skript.js"></script>
+</body>
+</html>
