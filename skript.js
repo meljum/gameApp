@@ -91,17 +91,18 @@ saveResult()
 
 }
 function showUsers(){
+    
     let data = getData()
     data.sort(function(a,b){
-        return a.score>b.score ? -1: 1
+        return a.score > b.score ? -1: 1
     })
     $listOfUsers.innerHTML = ''
     data.forEach(function (element,index){
         if(index>9){
             return true
         }
-         $listOfUsers.insertAdjacentHTML('beforeend',`
-         <div class="user"
+         $listOfUsers.insertAdjacentHTML('beforeend',
+         `<div class="user"
          <h1>
          ${element.name}
          -----
@@ -140,7 +141,3 @@ function getData(){
     return JSON.parse(localStorage.getItem('list'))
 }
 
-// const phones = [1,2,3,4,5,6,7,8,9]
-// const root = document.querySelector('#root')
-// phones.forEach(function(item,index,arr){
-// root.insertAdjacentHTML('bbeforeend',`${<h1>item</h1>}`)}) 
